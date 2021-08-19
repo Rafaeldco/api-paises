@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px;
+
+    background-image: linear-gradient(to right, #3093FC, #2ab2f8);
+    /* background-color: rgb; */
+}
+
+.paises {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.paises__bandeira {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.container__div {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+    
+    transition: transform 0.6s;
+}
+
+.container__div:hover {
+    transform: scale(1.1);
+}
+
+.busca {
+    all: unset;
+
+    width: 80vh;
+    height: 50px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+
+    background-color: white;
+    box-shadow: 0px 0px 1em rgba(158, 204, 241, 0.43);
+}
+
+.busca:focus {
+    box-shadow: 0px 0px 1em rgba(158, 204, 241);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+
+    padding: 40px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.nome {
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.regiao, .capital {
+    margin-bottom: 5px;
+}
+
+.populacao {
+    margin-bottom: 10px;
+}
+
+.input__container {
+    position: relative;
+}
+
+.icone--lupa {
+    position: relative;
+    top: 8px;
+    right: 50px;
+    opacity: 50%;
+}
+
+.modal__container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(12, 11, 11, 0.787);
+    color: black;
+}
+
+.modal__capital {
+    display: block;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 40px;
+
+    font-family: 'Rubik', sans-serif;
+
+    background-color: white;
+}
+
+.next {
+    position: absolute;
+    right: -100px;
+    cursor: pointer;
+}
+
+.previous {
+    position: absolute;
+    left: -100px;
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+
+    border-radius: 50%;
+    border: 15px solid white;
+    background-color: white;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.modal__nome {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.modal__capital, .modal__regiao, .modal__populacao {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.modal__img {
+    width: 400px;
+    height: 350px;
+    margin-top: 10px;
+}

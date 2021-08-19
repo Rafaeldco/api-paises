@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Países</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="input__container">
+            <input class="busca" placeholder="Pesquisar">
+            <img src="./assets/search-icon.svg" alt="Ícone de Lupa" class="icone--lupa">
+        </div>
+        <div class="paises"></div>
+    </div>
+    <div class="modal__container">
+        <div class="modal">
+            <h2 class="modal__nome"></h2>
+            <span class="modal__regiao"></span>
+            <span class="modal__capital"></span>
+            <p class="modal__populacao"></p>
+            <img class="modal__img">
+            <img src="./assets/next-icon.svg" alt="Passar para o próximo" class="next">
+            <img src="./assets/left-icon.svg" alt="Voltar ao anterior" class="previous">
+            <img src="./assets/close-icon.svg" alt="Botão de fechar" class="close">
+        </div>
+    </div>
+</body>
+
+</html>

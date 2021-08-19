@@ -10,3 +10,5 @@ Os critérios de busca do input são:
 ![](https://i.imgur.com/LTKaFy7.png)
 
 ![](https://i.imgur.com/ykmFoFk.png)
+
+![](https://i.imgur.com/hUMIUjj.png)
